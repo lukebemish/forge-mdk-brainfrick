@@ -1,0 +1,6 @@
+public class com.example.examplemod.EventStrings
+    public static java.lang.String onServerStarting()
+    public static java.lang.String commonSetup1()
+    public static java.lang.String commonSetup2()
+    public static java.lang.String clientSetup1()
+    public static java.lang.String clientSetup2()

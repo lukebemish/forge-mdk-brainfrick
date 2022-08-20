@@ -1,0 +1,46 @@
+@net.minecraftforge.fml.common.Mod(value="examplemod")
+public class com.example.examplemod.ExampleMod
+    public static put java.lang.String MODID
+    public static get java.lang.String MODID
+    public static put org.slf4j.Logger LOGGER
+    public static get org.slf4j.Logger LOGGER
+    public static put net.minecraftforge.registries.DeferredRegister BLOCKS
+    public static get net.minecraftforge.registries.DeferredRegister BLOCKS
+    public static put net.minecraftforge.registries.DeferredRegister ITEMS
+    public static get net.minecraftforge.registries.DeferredRegister ITEMS
+    public static put net.minecraftforge.registries.RegistryObject EXAMPLE_BLOCK
+    public static put net.minecraftforge.registries.RegistryObject EXAMPLE_BLOCK_ITEM
+    public new() -> java.lang.Object new()
+    private static java.lang.String getModid() //12
+    private static java.lang.String getExampleBlockId() //13
+    @net.minecraftforge.eventbus.api.SubscribeEvent
+    public void onServerStarting(net.minecraftforge.event.server.ServerStartingEvent)
+class net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext
+    static net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext get() //16
+    net.minecraftforge.eventbus.api.IEventBus getModEventBus()
+class net.minecraftforge.common.MinecraftForge
+    static get net.minecraftforge.eventbus.api.IEventBus EVENT_BUS //19
+interface net.minecraftforge.eventbus.api.IEventBus
+    void addListener(java.util.function.Consumer) //21
+    void register(java.lang.Object) //22
+class com.mojang.logging.LogUtils
+    static org.slf4j.Logger getLogger() //24
+interface org.slf4j.Logger
+    void info(java.lang.String)
+    void info(java.lang.String, java.lang.Object)
+class net.minecraftforge.registries.DeferredRegister
+    static net.minecraftforge.registries.DeferredRegister create(net.minecraftforge.registries.IForgeRegistry,java.lang.String) //29
+    net.minecraftforge.registries.RegistryObject register(java.lang.String, java.util.function.Supplier)
+    void register(net.minecraftforge.eventbus.api.IEventBus)
+class net.minecraftforge.registries.ForgeRegistries
+    static get net.minecraftforge.registries.IForgeRegistry BLOCKS //33
+    static get net.minecraftforge.registries.IForgeRegistry ITEMS
+class com.example.examplemod.BlockSupplier
+    new() //36
+class com.example.examplemod.ItemSupplier
+    new(net.minecraftforge.registries.RegistryObject) //38
+class com.example.examplemod.EventStrings
+    static java.lang.String onServerStarting() //40
+class com.example.examplemod.CommonSetupListener
+    new() //42
+class java.lang.Object

@@ -1,0 +1,19 @@
+@net.minecraftforge.fml.common.Mod$EventBusSubscriber(modid="examplemod",bus=net.minecraftforge.fml.common.Mod$EventBusSubscriber#MOD)
+public class com.example.examplemod.ClientModEvents
+    public new() -> java.lang.Object new()
+    @net.minecraftforge.eventbus.api.SubscribeEvent
+    public static void onClientSetup(net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent)
+class com.example.examplemod.ExampleMod
+    static get org.slf4j.Logger LOGGER
+class com.example.examplemod.EventStrings
+    static java.lang.String clientSetup1()
+    static java.lang.String clientSetup2()
+class net.minecraft.client.Minecraft
+    static net.minecraft.client.Minecraft getInstance() //9
+    net.minecraft.client.User getUser()
+class net.minecraft.client.User
+    java.lang.String getName()
+interface org.slf4j.Logger
+    void info(java.lang.String) //14
+    void info(java.lang.String, java.lang.Object)
+class java.lang.Object

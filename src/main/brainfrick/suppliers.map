@@ -1,0 +1,24 @@
+public class com.example.examplemod.BlockSupplier implements java.util.function.Supplier
+    public new() -> java.lang.Object new()
+    public java.lang.Object get()
+public class com.example.examplemod.ItemSupplier implements java.util.function.Supplier
+    private put net.minecraftforge.registries.RegistryObject blockObject
+    private get net.minecraftforge.registries.RegistryObject blockObject
+    public new(net.minecraftforge.registries.RegistryObject) -> java.lang.Object new()
+    public java.lang.Object get()
+class net.minecraft.world.level.block.state.BlockBehaviour$Properties
+    static net.minecraft.world.level.block.state.BlockBehaviour$Properties of(net.minecraft.world.level.material.Material) //9
+class net.minecraft.world.level.block.Block
+    new(net.minecraft.world.level.block.state.BlockBehaviour$Properties) //11
+class net.minecraft.world.level.material.Material
+    static get net.minecraft.world.level.material.Material STONE //13
+class net.minecraftforge.registries.RegistryObject
+    java.lang.Object get() //15
+class net.minecraft.world.item.Item$Properties
+    new() //17
+    net.minecraft.world.item.Item$Properties tab(net.minecraft.world.item.CreativeModeTab)
+class net.minecraft.world.item.BlockItem
+    new(net.minecraft.world.level.block.Block,net.minecraft.world.item.Item$Properties) //20
+class net.minecraft.world.item.CreativeModeTab
+    static get net.minecraft.world.item.CreativeModeTab TAB_BUILDING_BLOCKS
+class java.lang.Object

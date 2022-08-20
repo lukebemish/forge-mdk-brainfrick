@@ -1,0 +1,19 @@
+public class com.example.examplemod.CommonSetupListener
+    public new() -> java.lang.Object new()
+    @net.minecraftforge.eventbus.api.SubscribeEvent
+    public void onCommonSetup(net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent)
+class com.example.examplemod.ExampleMod
+    static get org.slf4j.Logger LOGGER
+class com.example.examplemod.EventStrings
+    static java.lang.String commonSetup1()
+    static java.lang.String commonSetup2()
+class net.minecraftforge.registries.ForgeRegistries
+    static get net.minecraftforge.registries.IForgeRegistry BLOCKS //9
+interface net.minecraftforge.registries.IForgeRegistry
+    net.minecraft.resources.ResourceLocation getKey(java.lang.Object)
+class net.minecraft.world.level.block.Blocks
+    static get net.minecraft.world.level.block.Block DIRT
+interface org.slf4j.Logger
+    void info(java.lang.String) //15
+    void info(java.lang.String, java.lang.Object)
+class java.lang.Object

@@ -1,4 +1,4 @@
-@net.minecraftforge.fml.common.Mod$EventBusSubscriber(modid="examplemod",bus=net.minecraftforge.fml.common.Mod$EventBusSubscriber#MOD)
+@net.minecraftforge.fml.common.Mod$EventBusSubscriber(value={net.minecraftforge.api.distmarker.Dist#CLIENT},modid="examplemod",bus=net.minecraftforge.fml.common.Mod$EventBusSubscriber#MOD)
 public class com.example.examplemod.ClientModEvents
     public new() -> java.lang.Object new()
     @net.minecraftforge.eventbus.api.SubscribeEvent
